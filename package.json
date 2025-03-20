@@ -1,0 +1,19 @@
+{
+  "name": "webjoy",
+  "version": "1.0.0",
+  "description": "Controls streaming platforms with a game controller on desktop",
+  "main": "main.js",
+  "scripts": {
+    "test": "node main",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "webjoy"
+  },
+  "author": "tomekk",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^35.0.2"
+  }
+}
