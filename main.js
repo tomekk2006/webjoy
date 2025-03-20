@@ -4,13 +4,13 @@ const createWindow = () => {
   const win = new BaseWindow({
     width: 800,
     height: 600,
-    icon: "./icon.png",
+    icon: "./assets/icon.png",
     title: "Webjoy"
   });
   win.setMenu(null);
-
   const urlBar = new WebContentsView();
-  urlBar.webContents.loadFile("./index.html");
+  
+  urlBar.webContents.loadFile("./views/navbar.html");
   const mainContent = new WebContentsView();
   mainContent.webContents.loadURL('https://youtube.com');
   // add children to main view
@@ -29,10 +29,10 @@ const createWindow = () => {
   });
 
   // on navigation update the url bar
-  mainContent.webContents.on('will-navigate', (details)=>{
-    urlBar.webContents.executeJavaScript(`document.querySelector('.url-text').textContent = '${details.url}'`);
+  mainContent.webContents.on('did-navigate-in-page', (event, url)=>{
+    urlBar.webContents.executeJavaScript(`document.querySelector('.url-text').textContent = '${url}'`);
   });
-  mainContent.webContents.on('will-redirect', (details)=>{
+  mainContent.webContents.on('did-redirect-navigation', (details)=>{
     urlBar.webContents.executeJavaScript(`document.querySelector('.url-text').textContent = '${details.url}'`);
   });
 }
