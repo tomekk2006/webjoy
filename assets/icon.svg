@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg width="48" height="48" viewBox="0 0 48 48" version="1.1" id="svg1" inkscape:export-filename="icon.png" inkscape:export-xdpi="96" inkscape:export-ydpi="96" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+<sodipodi:namedview id="namedview1" pagecolor="#505050" bordercolor="#eeeeee" borderopacity="1" inkscape:showpageshadow="0" inkscape:pageopacity="0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#505050" inkscape:document-units="px" />
+<defs id="defs1">
+<linearGradient id="linearGradient13" inkscape:collect="always">
+<stop style="stop-color:#c07a0a;stop-opacity:1;" offset="0" id="stop14" />
+<stop style="stop-color:#f4cc00;stop-opacity:1;" offset="1" id="stop13" />
+</linearGradient>
+<linearGradient id="linearGradient10" inkscape:collect="always">
+<stop style="stop-color:#ffdd55;stop-opacity:1;" offset="0" id="stop11" />
+<stop style="stop-color:#ffdd55;stop-opacity:0;" offset="1" id="stop12" />
+</linearGradient>
+<linearGradient inkscape:collect="always" xlink:href="#linearGradient10" id="linearGradient12" x1="24.057762" y1="4.0144391" x2="24.057762" y2="43.985561" gradientUnits="userSpaceOnUse" />
+<linearGradient inkscape:collect="always" xlink:href="#linearGradient13" id="linearGradient14" x1="24.115524" y1="0.11552346" x2="24.115524" y2="48.028881" gradientUnits="userSpaceOnUse" />
+<filter style="color-interpolation-filters:sRGB" inkscape:label="Drop Shadow" id="filter36" x="-0.41321651" y="-0.64159216" width="1.826433" height="2.0553637">
+<feFlood result="flood" in="SourceGraphic" flood-opacity="0.215686" flood-color="rgb(0,0,0)" id="feFlood35" />
+<feGaussianBlur result="blur" in="SourceGraphic" stdDeviation="4.255319" id="feGaussianBlur35" />
+<feOffset result="offset" in="blur" dx="0.000000" dy="-5.623100" id="feOffset35" />
+<feComposite result="comp1" operator="in" in="flood" in2="offset" id="feComposite35" />
+<feComposite result="comp2" operator="over" in="SourceGraphic" in2="comp1" id="feComposite36" />
+</filter>
+</defs>
+<g inkscape:label="Layer 1" inkscape:groupmode="layer" id="layer1">
+<circle style="fill:url(#linearGradient14);stroke-width:2.4;stroke-linecap:square;stroke-miterlimit:2.9;paint-order:stroke markers fill" id="path1" cx="24" cy="24" r="24" />
+<circle style="fill:url(#linearGradient12);fill-opacity:1;stroke-width:2.4;stroke-linecap:square;stroke-miterlimit:2.9;paint-order:stroke markers fill" id="path2" cx="24" cy="24" r="20.043322" />
+<text xml:space="preserve" style="font-size:33.9483px;line-height:1;font-family:Sans;-inkscape-font-specification:'Sans, Normal';fill:#ffeeaa;stroke-width:2.4;stroke-linecap:square;stroke-miterlimit:2.9;paint-order:stroke markers fill;filter:url(#filter36)" x="11.493155" y="36.341076" id="text17"><tspan sodipodi:role="line" id="tspan17" x="11.493155" y="36.341076" style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:33.9483px;font-family:Sans;-inkscape-font-specification:'Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffeeaa;stroke-width:2.4">Y</tspan></text>
+</g>
+</svg>
