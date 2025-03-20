@@ -4,7 +4,7 @@ const createWindow = () => {
   const win = new BaseWindow({
     width: 800,
     height: 600,
-    icon: "./bitmap.png",
+    icon: "./icon.png",
     title: "Webjoy"
   });
   win.setMenu(null);
