@@ -2,9 +2,9 @@
   "name": "webjoy",
   "version": "1.0.0",
   "description": "Controls streaming platforms with a game controller on desktop",
-  "main": "main.js",
+  "main": "./src/main.js",
   "scripts": {
-    "test": "node main",
+    "test": "node ./src/main",
     "start": "electron ."
   },
   "repository": {

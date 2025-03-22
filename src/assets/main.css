@@ -1,8 +1,6 @@
 body {
-    overflow: hidden;
-    background-color: #0e0e0e;
-
     margin: 0;
+    overflow: hidden;
 }
 
 .urlbar {
@@ -30,21 +28,32 @@ body {
     flex-direction: row;
     align-items: center;
     height: 32px;
+    border-bottom: 1px solid #282828;
+    background-color: #0e0e0e;
+    box-sizing: border-box;
 }
 
 .tip {
     display: flex;
     align-items: center;
-    margin-right: 4px;
     flex-shrink: 0;
+    padding: 4px;
+    user-select: none;
 }
-
-.tip>svg {
-    margin-right: 4px;
+.tip:hover {
+    background-color: #282828;
 }
-
 .tip>span {
+    margin-left: 2px;
     color: #494949;
     font-family: sans-serif;
-    font-weight: bold;
+}
+#drag {
+    app-region: drag;
+}
+
+#webview {
+    height: calc(100vh - 32px);
+    width: 100%;
+    display:flex;
 }
