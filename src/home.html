@@ -11,8 +11,31 @@
             background-size:auto;
             background-position: center;
         }
+        .select {
+            display: flex;
+            flex-direction: row;
+        }
+        .option {
+            padding: 4px;
+            margin: 0 4px;
+        }
+        .option:hover {
+            background-color: #282828;
+        }
+        .option > a {
+            color: white;
+            font-family: sans-serif;
+            text-decoration: none;
+            justify-content: center;
+        }
     </style>
 </head>
 <body>
+    <div class="select">
+        <div class="option"><a href="https://netflix.com">Netflix</a></div>
+        <div class="option"><a href="https://youtu.be">Youtube</a></div>
+        <div class="option"><a href="https://disneyplus.com">Disney+</a></div>
+        <div class="option"><a href="https://comp-server.uhi.ac.uk/~24008618/nova">Nova Cola</a></div>
+    </div>
 </body>
 </html>

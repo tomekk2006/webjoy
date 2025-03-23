@@ -14,26 +14,9 @@ tooltips.forEach((tooltip)=> {
     });
 });
 
+webview.addEventListener('will-navigate', (details) => {
+    urlText.textContent = details.url;
+});
 webview.addEventListener('did-navigate-in-page', (details) => {
     urlText.textContent = details.url;
 });
-webview.addEventListener('did-redirect-navigation', (details) => {
-    urlText.textContent = details.url;
-});
-webview.addEventListener('did-navigate', (details) => {
-    const url = new URL(details.url);
-    if (url.protocol === 'file:') {
-        webview.addEventListener('page-title-updated', () => {
-            urlText.textContent = webview.getTitle();}, 
-            {once:true}
-        );
-    }
-    else {
-        urlText.textContent = details.url;
-    }
-});
-webview.addEventListener('dom-ready', () => {
-    urlText.textContent = webview.loadURL('https://youtube.com');
-    }, 
-    {once:true}
-);
