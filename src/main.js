@@ -31,6 +31,7 @@ const createWindow = () => {
                 break;
         }
     });
+    // open app dev tools
     ipcMain.on('devtools', ()=>{
         win.webContents.openDevTools();
     });
