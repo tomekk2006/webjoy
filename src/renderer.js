@@ -6,7 +6,7 @@ tooltips = [
     {id:'close', fn: ()=> electron.close()},
     {id:'minimize', fn: () => electron.minimize()},
     {id:'maximize', fn: () => electron.maximize()},
-    {id:'dev', fn: () => webview.openDevTools()},
+    {id:'dev', fn: () => electron.devtools()},
     {id:'refresh', fn: () => webview.reload()}
 ]
 tooltips.forEach((tooltip)=> {
